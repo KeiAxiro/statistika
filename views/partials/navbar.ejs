@@ -1,24 +1,78 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              type="button"
+              id="materi_d"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Materi
+            </a>
+            <div class="dropdown-menu" aria-labelledby="materi_d">
+              <div class="dropdown dropend">
+                <a
+                  class="nav-link dropdown-toggle"
+                  type="button"
+                  id="std_d"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Statistika Dasar
+                </a>
+                <div class="dropdown-menu" aria-labelledby="std_d">
+                  <a class="dropdown-item" href="/mean">Mean</a>
+                  <a class="dropdown-item" href="#">Modus</a>
+                  <a class="dropdown-item" href="#">Median</a>
+                </div>
+              </div>
+
+              <div class="dropdown dropend">
+                <a
+                  class="nav-link dropdown-toggle"
+                  type="button"
+                  id="stl_d"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Statistika Lanjutan
+                </a>
+                <div class="dropdown-menu" aria-labelledby="stl_d">
+                  <a class="dropdown-item" href="#">Mean</a>
+                  <a class="dropdown-item" href="#">Modus</a>
+                  <a class="dropdown-item" href="#">Median</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>

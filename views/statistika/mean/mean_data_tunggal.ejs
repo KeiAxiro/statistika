@@ -1,0 +1,76 @@
+<div class="border border-primary rounded">
+  <div class="collapse mt-3" id="C_MT">
+    <div class="card card-body">
+      <h3>Mean Data Tunggal</h3>
+      <div class="row rounded">
+        <form action="" method="get" class="col-md col-lg-4 border-end">
+          <h4 class="mt-1">Input</h4>
+
+          <div class="mb-3">
+            <label for="" class="form-label">Data:</label>
+            <input
+              required
+              type="text"
+              class="form-control form-control-sm"
+              name="datainput"
+              id="datainput"
+              aria-describedby="helpId"
+              value="<%= datainput %>"
+              placeholder="1,2,3,4,5"
+            />
+            <small id="helpId" class="form-text text-muted"
+              >Example: 2,1,12,2,3,4,5,6,7,8,9,10,11,....</small
+            >
+          </div>
+
+          <button
+            type="submit"
+            name="submit_T"
+            value=""
+            class="btn btn-primary mb-3"
+          >
+            Submit
+          </button>
+        </form>
+
+        <div class="col border-start">
+          <h3 class="mt-1">Output</h3>
+          <div
+            class="border border-primary rounded p-2 bg-primary bg-gradient"
+            style="--bs-bg-opacity: 0.5"
+          >
+            <p>Data :</p>
+            <p>Data Sort :</p>
+
+            <p>
+              $$\Huge\boxed{\Large\bar{x} = \large\frac{
+              \displaystyle\sum_{i=1}^{n} x_i}{n}}$$
+            </p>
+
+            <!-- <p>$$\large\bar{x}=\frac{a}{a}$$</p> -->
+
+            <p style="overflow: auto">
+              $$\displaystyle \Large\begin{array}{rcl} \bar{x} & = &
+              \displaystyle\frac{aa} {a} \\ & = & \displaystyle\frac{a}{a} \\ &
+              = & \displaystyle a \end{array}$$
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-inline-flex gap-1 mt-2 p-2 pb-3">
+    <a
+      id="toggle_MT"
+      class="btn btn-primary"
+      data-bs-toggle="collapse"
+      href="#C_MT"
+      role="button"
+      aria-expanded="false"
+      aria-controls="C_MT"
+    >
+      Mean Data Tunggal
+    </a>
+  </div>
+</div>

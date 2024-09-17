@@ -1,7 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title><%= title %></title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -21,10 +21,13 @@
   <body>
     <header>
       <!-- place navbar here -->
-       <%- include('partials/navbar') %>
+      <%- include('../partials/navbar') %>
     </header>
     <main>
-      <%- include('st_dasar/'+file) %>
+      <div class="container-fluid">
+        <h1 class="mb-4">Mean</h1>
+        <%- include('mean/mean_data_tunggal') %>
+      </div>
     </main>
     <footer>
       <!-- place footer here -->
@@ -41,5 +44,21 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script>
+      // const bsCollapse = new bootstrap.Collapse('#C_MT', {
+      //       toggle: <?= $kondisiCMT = $dataInput_T != null ? 'true' : 'false' ?>
+      //   })
+      //   const bssCollapse = new bootstrap.Collapse('#C_MK', {
+      //       toggle: <?= $kondisiCMK = isset($_GET['a0']) ? 'true' : 'false' ?>
+      //   })
+      //   const bsssCollapse = new bootstrap.Collapse('#C_MKT', {
+      //       toggle: <?= $kondisiCMKT = isset($_GET['nt0']) ? 'true' : 'false' ?>
+      //   })
+    </script>
   </body>
 </html>
